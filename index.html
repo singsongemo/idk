@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>idk</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <style>
+        html{
+            background-color: black;
+            color: white;
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+            -webkit-touch-callout: none; /* iOS Safari */
+            -webkit-user-select: none; /* Safari */
+            -khtml-user-select: none; /* Konqueror HTML */
+            -moz-user-select: none; /* Old versions of Firefox */
+                -ms-user-select: none; /* Internet Explorer/Edge */
+                    user-select: none; /* Non-prefixed version, currently
+                                        supported by Chrome, Edge, Opera and Firefox */
+        }
+        #main{
+            background-color: rgb(41, 41, 41);
+            /* background-color: rgb(231, 231, 231); */
+            border: rgb(109, 109, 109) solid 1px;
+            border-radius: 5px;
+            height: 180px;
+            width: 500px;
+            text-align: center;
+            padding: 18px;
+            margin: 50vh auto 0px;
+            transform: translateY(-50%);
+        }
+        button{
+            margin: 50px;
+            background-color: rgb(66, 66, 66);
+            /* background-color: whitesmoke; */
+            border: 1px black solid;
+            width: 75px;
+            height: 60px;
+            color: white;
+            transition: 0.2s;
+            border-color: rgb(116, 116, 116);
+        }
+        a{
+            display: block;
+            color: rgb(167, 167, 255);
+            margin-top: 100px;
+        }
+    </style>
+    <script>
+        t = 1;
+        count = 0;
+
+        function yes(){
+            document.getElementById("main").innerHTML = "<p>I like you too, very beautiful blonde lady 🙂</p>";
+        }
+        function noclick(){
+            document.getElementById("main").innerHTML = "<p>LOL! </p><a href=\"javascript:window.location.href=window.location.href\">.</a>";
+        }
+        function no(){
+            if (t==0){
+                document.getElementById("ButtonNo").style.transform="translate(-30px, 60px)";
+            }
+            if (t==1){
+                document.getElementById("ButtonNo").style.transform="translate(-100px, -60px)";
+            }
+            if (t==2){
+                document.getElementById("ButtonNo").style.transform="translate(90px, -90px)";
+            }
+            if (t==3){
+                document.getElementById("ButtonNo").style.transform="translate(100px, 50px)";
+            }
+            
+            t = (t + Math.floor(Math.random() * 3) + 1) % 4;
+
+            count++;
+            if (count == 4) document.getElementById("text").innerHTML = "Let's keep trying to press that button!😭"
+            if (count == 12) document.getElementById("text").innerHTML = "Did you think that button was gonna work lol"
+            if (count == 7) document.getElementById("text").innerHTML = "I can't let you press that button when I've found someone who cares about me.):"
+        }
+    </script>
+</head>
+<body>
+    <div id="main">
+        <p id='text'>Do u like me? (your reply will be saved)</p>
+        <button onclick="yes()"> Yes! </button>
+        <button onmouseover="no()" onclick="noclick()" id="ButtonNo"> Pass the question for now  </button>      
+    </div> 
+</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emir Kervancıoğlu Tarafından Hazırlanan Sayfa</title>
+<style>
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 0px 0;
+}
+</style>
+</head>
+<body>
+<!-- Sayfa içeriği buraya gelecek -->
+<div class="footer">
+  <p>Coded by Emir Kervancioglu</p>
+</div>
+</body>
+</html>
+
+</html>
